@@ -32,7 +32,7 @@ const MapComponent: React.FC = () => {
   ];
 
   return (
-    <MapContainer center={center} zoom={9} className="rounded-xl h-96 w-full">
+    <MapContainer center={center} zoom={9} className="rounded-xl h-[30rem] w-full">
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {markers.map((marker, idx) => (
         <Marker key={idx} position={marker.position}>
@@ -40,7 +40,6 @@ const MapComponent: React.FC = () => {
             <div className='w-full h-full text-center font-bold'>
               <h2>{marker.name}</h2>
               <img src={marker.imageUrl} alt={marker.name} className='max-w-52 h-auto' />
-              {/* You can add more content here */}
             </div>
           </Popup>
         </Marker>

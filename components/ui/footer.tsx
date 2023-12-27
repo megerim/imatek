@@ -9,51 +9,31 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Top area: Blocks */}
-          <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
+          
+	<div className="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+		<div className="flex flex-row pr-3 space-x-4 sm:space-x-8">
+		
 
-            {/* 1st block */}
-            <div className="md:col-span-4 lg:col-span-5">
-              <div className="mb-1 text-center">
-                {/* Logo */}
-                <Link href="/" className="inline-block" aria-label="Cruip">
-                  <Image src={"/images/logo.webp"} width={64} height={64} alt="Logo" className='w-64 h-32' />
-                </Link>
-              </div>
-              <div className="text-gray-400 text-center">
-                <p>
-                Hürriyet, Kazım Koyuncu Sokak no 1/2, Süleymanpaşa/Tekirdağ, Türkiye
-                </p>
-              </div>
-            </div>
+    <Image src={"/images/logo.webp"} width={64} height={64} alt="Logo" className='w-64 h-32' />
 
-            {/* 2nd, 3rd and 4th blocks */}
-            <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8 text-center">
-
-              {/* 2nd block */}
-              <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Hızlı Linkler</h6>
-                
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Projelerimiz   |</Link>
-                  
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">|   Hakkımızda   |</Link>
-                 
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">|   İletişim</Link>
-                
-              </div>
-
-              
-
-              
-
-            </div>
-
-          </div>
+		</div>
+		<ul className="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+			<li>
+				<a rel="noopener noreferrer" href="/about">Hakkımızda</a>
+			</li>
+			<li>
+				<a rel="noopener noreferrer" href="/projeler">Projeler</a>
+			</li>
+			<li>
+				<a rel="noopener noreferrer" href="/contact">İletişim</a>
+			</li>
+		</ul>
+	</div>
 
           {/* Bottom area */}
           <div className="md:flex md:items-center md:justify-between">
-
             {/* Social links */}
-            <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+            <ul className="flex my-4 justify-center md:order-1 md:ml-4 md:my-0 ">
               <li>
                 <Link href="/" className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Twitter">
                   <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
