@@ -15,7 +15,7 @@ export default function ResetPassword() {
           {/* Page header */}
           <div className="max-w-6xl mx-auto text-center pb-12 md:pb-20">
             <h1 className="h1 mb-4">Projelerimiz</h1>
-            <ButtonGroup className="md:py-8">
+            <ButtonGroup className="py-8">
               <Button>Müstakil</Button>
               <Button className="border-r border-l border-dashed">Yol</Button>
               <Button className="border-r border-dashed">Apartman</Button>
