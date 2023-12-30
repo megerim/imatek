@@ -1,40 +1,73 @@
-import React from 'react'
-import Image from 'next/image'
-import HeroImage from '../public/images/hero-image-01.jpeg'
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Logo from "@/public/images/logo.jpg";
+import Image from "next/image";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
 
-const Welcomer = () => {
+import { EffectCoverflow, Pagination, Autoplay, Navigation } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+
+export default () => {
   return (
-    <section>
-  <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-      <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-        <Image
-          alt="Party"
-          src={HeroImage}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-      </div>
+    <Swiper
+    effect={"coverflow"}
+    grabCursor={true}
+    centeredSlides={true}
+    navigation={true}
+    slidesPerView={1} // Default to 1 for mobile
+    coverflowEffect={{
+      rotate: 50,
+      stretch: 0,
+      depth: 150,
+      modifier: 1,
+      slideShadows: true,
+    }}
+    pagination={true}
+    modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
+    className="mySwiper"
+    autoplay={{
+      delay: 1500,
+      disableOnInteraction: true, // Continue autoplay when user interacts
+    }}
 
-      <div className='md:py-12'>
-        <h2 className="text-3xl font-bold sm:text-4xl">Merhaba , </h2>
-
-        <p className="mt-4 text-gray-300">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-          eius quos ea neque sunt.
-        </p>
-<div className="text-center">
-        <a
-          href="/projeler"
-          className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-        >
-          PROJELERIMIZ
-        </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  )
-}
-
-export default Welcomer
+    breakpoints={{
+      768: {
+        slidesPerView: 3, // Show 3 slides on desktop
+      }
+    }}
+  >
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Logo} width={600} height={600} alt="Logo" />
+        </SwiperSlide>
+      </Swiper>
+  );
+};

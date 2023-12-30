@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import MobileMenu from './mobile-menu'
+import {Button} from "@nextui-org/button";
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="İmatek">
-              <Image src={"/images/logo.webp"} width={64} height={64} alt="Logo" className='w-64 h-32' />
+              <Image src={"/images/logo.webp"} width={600} height={300} alt="Logo" className='w-64 h-32' />
             </Link>
           </div>
 
@@ -36,8 +37,17 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
+              <Link
+                  href="/contact"
+                  passHref
+                  >
+                <Button className="text-white bg-purple-600 hover:bg-purple-700 ml-3">
+                
+                
                   İletişim
+                
+                
+                </Button>
                 </Link>
               </li>
             </ul>

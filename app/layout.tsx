@@ -1,5 +1,7 @@
+import {Providers} from "./providers";
 import './css/style.css'
 import 'leaflet/dist/leaflet.css';
+
 
 import { Inter, Architects_Daughter } from 'next/font/google'
 
@@ -29,12 +31,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
+        <Providers>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
         </div>
+        </Providers>
       </body>
     </html>
   )

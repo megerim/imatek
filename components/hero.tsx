@@ -1,8 +1,11 @@
 import dynamic from 'next/dynamic';
-import Welcomer from './welcomer';
 
 const DynamicMapComponent = dynamic(
   () => import('./mapcomponent'), 
+  { ssr: false }
+);
+const DynamicWelcomer = dynamic(
+  () => import('./welcomer'), 
   { ssr: false }
 );
 
@@ -27,10 +30,11 @@ export default function Hero() {
 
         {/* Hero content */}
         <div className="relative py-24 pb-10 md:pb-16">
-        <div data-aos="fade-up">
-             
-          <Welcomer/>
-             
+        <div className="max-w-5xl mx-auto text-center pb-12 md:pb-12">
+            <div className="max-w-xs mx-auto sm:max-w-none sm:min-h-48 sm:flex sm:justify-center">
+                <DynamicWelcomer />
+              
+            </div>  
           </div>
 
           {/* Section header */}
