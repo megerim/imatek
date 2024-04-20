@@ -4,11 +4,6 @@ const DynamicMapComponent = dynamic(
   () => import('./mapcomponent'), 
   { ssr: false }
 );
-const DynamicWelcomer = dynamic(
-  () => import('./welcomer'), 
-  { ssr: false }
-);
-
 
 export default function Hero() {
   return (
@@ -30,16 +25,10 @@ export default function Hero() {
 
         {/* Hero content */}
         <div className="relative py-24 pb-10 md:pb-16">
-        <div className="max-w-5xl mx-auto text-center pb-12 md:pb-12">
-            <div className="max-w-xs mx-auto sm:max-w-none sm:min-h-48 sm:flex sm:justify-center">
-                <DynamicWelcomer />
-              
-            </div>  
-          </div>
 
           {/* Section header */}
           <div className="max-w-5xl mx-auto text-center pb-12 md:pb-12">
-            <h2 className="h2 mb-4" data-aos="fade-up">Proje Haritası</h2>
+            <h2 id='mapId' className="h2 mb-4" data-aos="fade-up">Proje Haritası</h2>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
                 <DynamicMapComponent />
               

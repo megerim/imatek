@@ -4,11 +4,15 @@ export const metadata = {
 }
 
 import Hero from '@/components/hero'
+import Welcomer from '@/components/welcomer'
 import Zigzag from '@/components/zigzag'
 
 export default function Home() {
   return (
     <>
+    <div className="flex mx-auto">
+    <Welcomer />
+    </div>
       <Hero />
       <Zigzag />
     </>

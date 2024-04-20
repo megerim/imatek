@@ -5,7 +5,6 @@ import 'leaflet/dist/leaflet.css';
 
 import { Inter, Architects_Daughter } from 'next/font/google'
 
-import Header from '@/components/ui/header'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,7 +34,6 @@ export default function RootLayout({
       <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
         <Providers>
         <div className="flex flex-col min-h-screen overflow-hidden">
-          <Header />
           {children}
         </div>
         </Providers>

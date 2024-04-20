@@ -4,7 +4,6 @@ export const metadata = {
 };
 
 import { Button, ButtonGroup } from "@nextui-org/react";
-import Projeler from "@/components/projeler/projeler";
 import Projelercard from "@/components/projeler/projecard";
 
 export default function ResetPassword() {
