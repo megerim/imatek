@@ -5,6 +5,18 @@ import { Link, Button } from "@nextui-org/react";
 import { Icon1, Icon2, Icon3, Map } from "@/components/ui/icons";
 
 export default function Welcomer(): JSX.Element {
+  const icon = {
+    hidden: {
+      fill: "rgba(255, 255, 255, 0)",
+      pathLength: 0,
+    },
+    visible: {
+      
+    fill: "rgba(255, 255, 255, 1)",
+      pathLength: 1.2,
+    }
+  };
+
   return (
     <div className="relative mx-auto  py-24 pb-10 md:pb-16">
       <div className="max-w-5xl  text-center pb-12 md:pb-12">
@@ -126,6 +138,7 @@ export default function Welcomer(): JSX.Element {
             </div>
           </motion.div>
         </div>
+
       </div>
     </div>
   );

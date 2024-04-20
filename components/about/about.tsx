@@ -1,6 +1,3 @@
-"use client";
-import Animatedsvg from "../ui/animatedsvg";
-
 export default function Example() {
   return (
     <section className="text-gray-100 body-font">
@@ -38,69 +35,6 @@ export default function Example() {
           <h2 className="text-gray-200 font-medium title-font tracking-wider text-sm">
             Imatek Yapı&Mühendislik
           </h2>
-        </div>
-        <Animatedsvg />
-
-        <div className="bg-yellow-400 h-full">
-          <div className="flex flex-row items-center justify-center mx-auto">
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-          </div>
-
-          <div className="flex flex-row items-center justify-center mx-auto">
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-          </div>
-          <div className="flex flex-row items-center justify-center mx-auto">
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-          </div>
-          <div className="flex flex-row items-center justify-center mx-auto">
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-            <div
-              className="h-0 w-0 border-r-[25px] border-b-[50px] 
-border-l-[25px] border-solid border-r-transparent
-border-l-transparent border-b-[#000]"
-            />
-          </div>
         </div>
       </div>
     </section>
