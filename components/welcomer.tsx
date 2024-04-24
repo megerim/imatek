@@ -18,7 +18,7 @@ export default function Welcomer(): JSX.Element {
   };
 
   return (
-    <div className="relative mx-auto  py-24 pb-10 md:pb-16">
+    <div className="relative mx-auto pt-5 md:pt-32 pb-10 md:pb-16">
       <div className="max-w-5xl  text-center pb-12 md:pb-12">
         <div className="max-w-xs mx-auto md:max-w-none min-h-48 flex  flex-col md:flex-row ">
           <motion.div
@@ -64,7 +64,7 @@ export default function Welcomer(): JSX.Element {
             <p className="uppercase font-bold text-lg md:text-xl tracking-widest mt-3">
               YAPI & MÜHENDİSLİK
             </p>
-
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, tempora. Impedit itaque inventore quis.</p>
             <div className="mt-5">
               <motion.div
                 initial={{ scale: 0.9, opacity: 0.1 }}
