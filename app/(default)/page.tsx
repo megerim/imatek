@@ -10,7 +10,7 @@ import Zigzag from '@/components/zigzag'
 export default function Home() {
   return (
     <>
-    <div className="flex mx-auto">
+    <div className="mx-auto">
     <Welcomer />
     </div>
       <Hero />

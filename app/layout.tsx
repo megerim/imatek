@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css';
 
 
 import { Inter, Architects_Daughter } from 'next/font/google'
+import { FloatingNavDemo } from "@/components/floatingnav";
 
 
 const inter = Inter({
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
         <Providers>
+          <FloatingNavDemo />
         <div className="flex flex-col min-h-screen overflow-hidden">
           {children}
         </div>

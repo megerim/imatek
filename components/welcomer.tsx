@@ -4,6 +4,8 @@ import Logo from "./logo";
 import { Link, Button } from "@nextui-org/react";
 import { Icon1, Icon2, Icon3, Map } from "@/components/ui/icons";
 
+import { AuroraBackground } from "./ui/aurorabg";
+
 export default function Welcomer(): JSX.Element {
   const icon = {
     hidden: {
@@ -18,6 +20,7 @@ export default function Welcomer(): JSX.Element {
   };
 
   return (
+    <AuroraBackground>
     <div className="relative mx-auto pt-5 md:pt-32 pb-10 md:pb-16">
       <div className="max-w-5xl  text-center pb-12 md:pb-12">
         <div className="max-w-xs mx-auto md:max-w-none min-h-48 flex  flex-col md:flex-row ">
@@ -27,7 +30,6 @@ export default function Welcomer(): JSX.Element {
               opacity: 1,
             }}
             transition={{ duration: 0.75 }}
-            className="p-5 md:p-0"
           >
             <Logo />
           </motion.div>
@@ -61,10 +63,10 @@ export default function Welcomer(): JSX.Element {
             >
               IMATEK
             </motion.p>
-            <p className="uppercase font-bold text-lg md:text-xl tracking-widest mt-3">
+            <p className="uppercase font-bold text-lg md:text-xl tracking-widest mt-3 text-gray-100">
               YAPI & MÜHENDİSLİK
             </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, tempora. Impedit itaque inventore quis.</p>
+<p className="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, tempora. Impedit itaque inventore quis.</p>
             <div className="mt-5">
               <motion.div
                 initial={{ scale: 0.9, opacity: 0.1 }}
@@ -141,5 +143,6 @@ export default function Welcomer(): JSX.Element {
 
       </div>
     </div>
+    </AuroraBackground>
   );
 }
